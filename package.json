@@ -1,8 +1,9 @@
 {
   "scripts": {
     "start": "serve",
-    "test": "npx playwright test --project=chromium --config=./playwright.config.ts",
-    "test-headed": "npx playwright test --project=chromium --config=./playwright.config.ts --headed"
+    "clean": "rm -rf test-results && rm -rf playwright-report && rm -rf junit-results",    
+    "test": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts",
+    "test-headed": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts --headed"
   },
   "dependencies": {
     "todomvc-app-css": "2.4.3"

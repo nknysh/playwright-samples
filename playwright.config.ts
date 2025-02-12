@@ -108,7 +108,7 @@ const config: PlaywrightTestConfig = {
 
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: [['list'], ['html', { open: 'never' }], ['junit', { outputFile: './junit.xml' }]],
+  reporter: [['list'], ['html', { open: 'never' }], ['junit', { outputFile: './junit-results/junit.xml' }]],
 
   /* Run your local dev server before starting the tests */
   // webServer: {

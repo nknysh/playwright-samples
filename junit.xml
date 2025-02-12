@@ -1,6 +1,0 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="0.95729">
-<testsuite name="test/specs/todos.spec.ts" timestamp="2025-02-12T07:11:02.552Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.324" errors="0">
-<testcase name="ToDo List › Validate header" classname="test/specs/todos.spec.ts" time="0.324">
-</testcase>
-</testsuite>
-</testsuites>

@@ -31,11 +31,11 @@
 	 */
 	function Template() {
 		this.defaultTemplate
-		=	'<li data-id="{{id}}" class="{{completed}}">'
+		=	'<li data-id="{{id}}" data-testid="container" class="{{completed}}">'
 		+		'<div class="view">'
-		+			'<input class="toggle" type="checkbox" {{checked}}>'
-		+			'<label>{{title}}</label>'
-		+			'<button class="destroy"></button>'
+		+			'<input class="toggle" type="checkbox" data-testid="checkbox" {{checked}}>'
+		+			'<label data-testid="label">{{title}}</label>'
+		+			'<button class="destroy" data-testid="delete"></button>'
 		+		'</div>'
 		+	'</li>';
 	}
