@@ -38,7 +38,7 @@ test.describe('ToDo List', () => {
     await toDoPage.validateItemCompleted(0);
   });
 
-  test.only('Unnomplete item', async ({ toDoPage, page }) => {
+  test('Unnomplete item', async ({ toDoPage, page }) => {
     const itemTitle = 'newItemTitle';
 
     await toDoPage.goto();

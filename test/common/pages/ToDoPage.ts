@@ -10,7 +10,7 @@ export class ToDoPage extends BasePage {
   private toDoList = new ToDoListComponent(this.page.getByTestId('todo-list'));
 
   public async validateHeader(value: string) {
-    expect(await this.header).toHaveText(value);
+    await expect(this.header).toHaveText(value);
   }
 
   public async createItem(name: string) {
@@ -19,11 +19,11 @@ export class ToDoPage extends BasePage {
   }
 
   public async validateItemLabel(index: number, value: string) {
-    this.toDoList.validateItemLabel(index, value);
+    await this.toDoList.validateItemLabel(index, value);
   }
 
   public async toggleItemCompleted(index: number) {
-    this.toDoList.toggleItemCompleted(index);
+    await this.toDoList.toggleItemCompleted(index);
   }
 
   public async validateItemCompleted(index: number) {
@@ -31,7 +31,7 @@ export class ToDoPage extends BasePage {
   }
 
   public async validateItemNotCompleted(index: number) {
-    this.toDoList.validateItemNotCompleted(index);
+    await this.toDoList.validateItemNotCompleted(index);
   }
 
   public async goto() {
