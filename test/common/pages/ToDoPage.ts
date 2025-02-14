@@ -1,4 +1,4 @@
-import { ToDoListComponent } from '../../components/toDoListComponent';
+import { ToDoListComponent } from '../components/toDoListComponent';
 import { env } from '../../utils/env';
 import { BasePage } from './BasePage';
 import { expect} from '@playwright/test';

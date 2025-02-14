@@ -1,10 +1,22 @@
-# Playwright Best Practices Example
+# Playwright TypeScript Best Practices Example
 
 This repository contains several best practices for developing automated tests using Playwright.
 
-There are both functional and visual tests implemented with Playwright.
+There are both functional and visual tests implemented with Playwright and TypeScript.
 
 The application under test is a small JavaScript app.
+
+To start the app:
+
+```sh
+npm run start
+```
+
+To run Playwright fuctional test:
+
+```sh
+npm run test
+```
 
 ## Playwright Page Object and Fixtures Example
 
@@ -47,4 +59,30 @@ In the spec file, you can read **what** the automated test does, while the page 
 
 ## Playwright Components Example
 
+In this example, UI components represent controls that can be used across multiple pages, reducing code repetition.
+
+Components are stored in `test/common/components/`. Each component class contains element locators and methods. It is recommended to have atomic methods to enable reusability.
+
+To use a component in a page object, instantiate the respective class:
+
+```javascript
+private toDoList = new ToDoListComponent(this.page.getByTestId('todo-list'));
+```
+
 ## Playwright Visual Testing Example
+
+Visual tests capture screenshots of the app (or specific elements) to validate against in future test runs.
+
+In this example, visual test specs and snapshots are stored in `test/visual/`.
+
+To run visual tests:
+
+```sh
+npm run test-visual
+```
+
+To update snapshots:
+
+```sh
+npm run test-visual:update
+```
