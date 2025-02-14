@@ -9,6 +9,10 @@ export class ToDoPage extends BasePage {
 
   private toDoList = new ToDoListComponent(this.page.getByTestId('todo-list'));
 
+  public getToDoList() {
+    return this.toDoList;
+  }
+
   public async validateHeader(value: string) {
     await expect(this.header).toHaveText(value);
   }

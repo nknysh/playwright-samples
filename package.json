@@ -3,7 +3,9 @@
     "start": "serve",
     "clean": "rm -rf test-results && rm -rf playwright-report && rm -rf junit-results",    
     "test": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts",
-    "test-headed": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts --headed"
+    "test-headed": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts --headed",
+    "test-visual": "npm run clean && npx playwright test --project=visual --config=./playwright.config.ts",
+    "test-visual:update": "npm run test-visual --update-snapshots"
   },
   "dependencies": {
     "todomvc-app-css": "2.4.3"

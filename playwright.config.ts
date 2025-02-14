@@ -23,7 +23,6 @@ const config: PlaywrightTestConfig = {
 
   /* Configure projects for major browsers */
   projects: [
-    // Browsers
     {
       name: 'chromium',
       testDir: './test/specs',
@@ -35,7 +34,18 @@ const config: PlaywrightTestConfig = {
       // },
       // dependencies: ['setup'],
     },
-
+    {
+      name: 'visual',
+      testDir: './test/visual',
+      testMatch: /.*\.spec\.ts/,
+      /* Project-specific settings. */
+      // use: {
+      //   ...devices['Desktop Chrome'],
+      //   storageState: 'playwright/.auth/user.json',
+      // },
+      // dependencies: ['setup'],
+    },
+  
     // Browsers
     // {
     //   name: 'firefox',

@@ -10,6 +10,10 @@ export class ToDoListComponent extends BaseComponent {
     deleteButton: this.listItemContainer(n).getByTestId('delete'),
   });
 
+  public getListItemContainer(index: number) {
+    return this.listItemContainer(index);
+  }
+
   public async validateItemLabel(index: number, value: string) {
     await expect(this.listItem(index).label).toHaveText(value);
   }
