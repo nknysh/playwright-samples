@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "todomvc-app-css": "2.4.3",
-    "serve-handler": "6.1.6"
+    "serve": "14.2.4"
   },
   "devDependencies": {
     "dotenv": "16.4.7",
