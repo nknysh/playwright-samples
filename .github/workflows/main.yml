@@ -11,7 +11,7 @@ on:
     - cron: "15 15 * * *" # Run daily at 3:15 PM UTC (10:15 AM EST)
 
 jobs:
-  deploy and test:
+  deploy-and-test:
     runs-on: ubuntu-latest
 
     steps:
