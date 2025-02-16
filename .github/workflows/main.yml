@@ -24,9 +24,8 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        - name: Install dependencies
-          run: npm install
-          working-directory: /home/runner/work/playwright-samples
+        run: npm install
+        working-directory: /home/runner/work/playwright-samples
 
       - name: Start the application
         run: npm run start &
