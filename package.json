@@ -8,13 +8,13 @@
     "test-visual:update": "npm run test-visual --update-snapshots"
   },
   "dependencies": {
-    "todomvc-app-css": "2.4.3"
+    "todomvc-app-css": "2.4.3",
+    "serve-handler": "6.1.6"
   },
   "devDependencies": {
     "dotenv": "16.4.7",
     "@playwright/test": "1.50.1",
     "@types/node": "22.13.1",
     "playwright": "1.50.1",
-    "serve-handler": "6.1.6"
   }
 }
