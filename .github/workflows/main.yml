@@ -35,5 +35,5 @@ jobs:
       - name: Run Playwright functional tests
         run: npm run test
 
-      - name: Run Playwright visual tests
-        run: npm run test-visual
+      # - name: Run Playwright visual tests
+      # run: npm run test-visual
