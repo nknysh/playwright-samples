@@ -75,6 +75,8 @@ Visual tests capture screenshots of the app (or specific elements) to validate a
 
 In this example, visual test specs and snapshots are stored in `test/visual/`.
 
+Note that snapshot contents and file names differ depending on the system used to run tests. To make tests pass consistenently, you need to run them in the same docker image.
+
 To run visual tests:
 
 ```sh
