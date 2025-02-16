@@ -25,7 +25,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: /home/runner/work/playwright-samples
 
       - name: Start the application
         run: npm run start &
@@ -37,7 +36,7 @@ jobs:
     steps:
       - name: Run Playwright functional tests
         run: npm run test
-        working-directory: /home/runner/work/playwright-samples
+        working-directory: /home/runner/work/playwright-samples/playwright-samples
 
       - name: Run Playwright visual tests
         run: npm run test-visual
