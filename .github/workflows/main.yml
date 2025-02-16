@@ -38,6 +38,7 @@ jobs:
     steps:
       - name: Run Playwright functional tests
         run: npm run test
+        working-directory: /home/runner/work/playwright-samples
 
       - name: Run Playwright visual tests
         run: npm run test-visual
