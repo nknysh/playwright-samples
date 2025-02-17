@@ -35,5 +35,11 @@ jobs:
       - name: Run Playwright functional tests
         run: npm run test
 
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v3
+        with:
+          name: playwright-report
+          path: playwright-report
+
       # - name: Run Playwright visual tests
       # run: npm run test-visual
