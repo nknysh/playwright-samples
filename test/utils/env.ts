@@ -1,5 +1,6 @@
 export const env = {
-  baseUrl: getEnvVariable('BASE_URL')
+  baseUrl: getEnvVariable('BASE_URL'),
+  apiBaseUrl: getEnvVariable('API_BASE_URL')
 } as const;
 
 function getEnvVariable(variableName: string): string {

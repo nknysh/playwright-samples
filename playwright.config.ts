@@ -45,6 +45,17 @@ const config: PlaywrightTestConfig = {
       // },
       // dependencies: ['setup'],
     },
+    {
+      name: 'api',
+      testDir: './test/api',
+      testMatch: /.*\.spec\.ts/,
+      /* Project-specific settings. */
+      // use: {
+      //   ...devices['Desktop Chrome'],
+      //   storageState: 'playwright/.auth/user.json',
+      // },
+      // dependencies: ['setup'],
+    },
   
     // Browsers
     // {

@@ -5,7 +5,8 @@
     "test": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts",
     "test-headed": "npm run clean && npx playwright test --project=chromium --config=./playwright.config.ts --headed",
     "test-visual": "npm run clean && npx playwright test --project=visual --config=./playwright.config.ts",
-    "test-visual:update": "npm run test-visual --update-snapshots"
+    "test-visual:update": "npm run test-visual --update-snapshots",
+    "test-api": "npm run clean && npx playwright test --project=api --config=./playwright.config.ts"
   },
   "dependencies": {
     "todomvc-app-css": "2.4.3",
