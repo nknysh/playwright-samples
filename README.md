@@ -2,7 +2,7 @@
 
 This repository contains several best practices for developing automated tests using Playwright.
 
-There are both functional and visual tests implemented with Playwright and TypeScript.
+There are functional, visual and API (REST) tests implemented with Playwright and TypeScript.
 
 The application under test is a small JavaScript app.
 
@@ -16,6 +16,12 @@ To run Playwright fuctional test:
 
 ```sh
 npm run test
+```
+
+To run Playwright API tests:
+
+```sh
+npm run test-api
 ```
 
 ## Playwright Page Object and Fixtures Example
